@@ -3,7 +3,7 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="4dp"
     android:layout_margin="4dp">
@@ -14,14 +14,15 @@
 
         <ImageView
             android:id="@+id/pizzaImageView"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:padding="4dp">
         </ImageView>
         <TextView
-            android:id="@+id/titleImageView"
+            android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="4dp"
             android:text="Title"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -29,13 +30,14 @@
             android:layout_toEndOf="@id/pizzaImageView">
         </TextView>
         <TextView
-            android:id="@+id/descriptionImageView"
+            android:id="@+id/descriptionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="4dp"
             android:text="Description"
             android:textSize="15sp"
             android:textStyle="italic"
-            android:layout_below="@id/titleImageView"
+            android:layout_below="@id/titleTextView"
             android:layout_toEndOf="@id/pizzaImageView">
         </TextView>
     </RelativeLayout>

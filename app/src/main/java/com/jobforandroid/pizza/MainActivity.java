@@ -1,6 +1,7 @@
 package com.jobforandroid.pizza;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -52,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
                     Utils.PIZZA_TRI_CHEESE_DESCRIPTION,Utils.PIZZA_TRI_CHEESE_RECIPE));
             pizzaRecipeItems.add(new PizzaRecipeItem(R.drawable.vegana,Utils.PIZZA_VEGANA_TITLE,Utils.PIZZA_VEGANA_DESCRIPTION,
                     Utils.PIZZA_VEGANA_RECIPE));
+
+
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        adapter = new PizzaRecipeAdapter(pizzaRecipeItems);
+        layoutManager = new LinearLayoutManager(this);
+
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(layoutManager);
 
     }
 }
