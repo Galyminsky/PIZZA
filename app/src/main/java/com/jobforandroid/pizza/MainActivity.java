@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
-        adapter = new PizzaRecipeAdapter(pizzaRecipeItems);
+        adapter = new PizzaRecipeAdapter(pizzaRecipeItems, this);
         layoutManager = new LinearLayoutManager(this);
 
         recyclerView.setAdapter(adapter);
