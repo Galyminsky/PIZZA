@@ -22,6 +22,7 @@ public class RecipeActivity extends AppCompatActivity {
             title.setText(intent.getStringExtra("title"));
             recipe.setText(intent.getStringExtra("recipe"));
 
+
         }
     }
 }
