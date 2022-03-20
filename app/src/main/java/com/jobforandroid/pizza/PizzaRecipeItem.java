@@ -1,6 +1,10 @@
 package com.jobforandroid.pizza;
 
-public class PizzaRecipeItem {
+import java.io.Serializable;
+
+public class PizzaRecipeItem implements Serializable {
+
+    public static final String PIZZA_SAVE = "SAVE";
 
     private int imageResource;
     private String title;

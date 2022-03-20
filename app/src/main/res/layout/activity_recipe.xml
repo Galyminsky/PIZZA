@@ -23,12 +23,12 @@
 
 
             <EditText
-                android:id="@+id/recipeTextView"
+                android:id="@+id/recipeEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="356dp"
                 android:layout_marginBottom="356dp"
-                android:hint="Рецепт..."
+                android:hint="@string/Description"
                 android:minHeight="48dp"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -36,47 +36,51 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:autofillHints="" />
 
             <EditText
-                android:id="@+id/titleTextView"
+                android:id="@+id/titleEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="176dp"
                 android:layout_marginTop="268dp"
                 android:layout_marginEnd="176dp"
-                android:hint="Название.."
+                android:hint="@string/Title"
                 android:minHeight="48dp"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/recipeTextView"
+                app:layout_constraintBottom_toTopOf="@+id/recipeEditText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_zakaz"
+                android:id="@+id/btn_save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="150dp"
                 android:layout_marginEnd="150dp"
                 android:layout_marginBottom="135dp"
-                android:text="Сохранить"
+                android:text="@string/save"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 app:cornerRadius="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipeTextView"></com.google.android.material.button.MaterialButton>
+                app:layout_constraintTop_toBottomOf="@+id/recipeEditText" />
+
 
             <ImageView
-                android:id="@+id/recipeimageView"
+                android:id="@+id/recipeImageView"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="100dp"
                 android:layout_marginTop="61dp"
                 android:layout_marginEnd="100dp"
-                app:layout_constraintBottom_toTopOf="@+id/titleTextView"
+                app:layout_constraintBottom_toTopOf="@+id/titleEditText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

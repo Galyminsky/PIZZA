@@ -35,7 +35,7 @@ public class PizzaRecipeAdapter extends RecyclerView.Adapter <PizzaRecipeAdapter
             itemView.setOnClickListener(this);
 
             pizzaImageView = itemView.findViewById(R.id.pizzaImageView);
-            title = itemView.findViewById(R.id.titleTextView);
+            title = itemView.findViewById(R.id.titleEditText);
             description = itemView.findViewById(R.id.descriptionTextView);
         }
 
