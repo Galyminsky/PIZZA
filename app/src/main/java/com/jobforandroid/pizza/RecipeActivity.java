@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class RecipeActivity extends AppCompatActivity {
@@ -24,5 +25,11 @@ public class RecipeActivity extends AppCompatActivity {
 
 
         }
+    }
+    void saveNote () {
+        Intent result = new Intent();
+        result.putExtra(Note.NOTE, note);
+        setResult(RESULT_OK, result);
+        finish();
     }
 }
